@@ -1,0 +1,524 @@
+/*--------------------
+    Common styles
+-------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+h2 {
+    font-size: 60px;
+    margin: 0px;
+}
+.container {
+    width: 90%;
+    margin: 0px auto;
+}
+#hero-section {
+    height: 100vh;
+    padding-top: 90px;
+}
+.section-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*---------------------------------
+    Topbar / Navbar section styles
+-----------------------------------*/
+#topbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    background: #4285F4
+}
+.topbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar-left {
+    width: 30%;
+}
+.topbar-right {
+    width: 70%;
+}
+.topbar-right > ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.topbar-right > ul > li {
+    list-style: none;
+    padding: 20px 10px;
+}
+.topbar-right > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 7px 10px;
+    transition: .5s;
+}
+.topbar-right > ul > li:hover > a {
+    border: 2px solid #fff;
+}
+
+.brand {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    color: orange;
+}
+.brand > span {
+    color: #fff;
+}
+.nav-icon {
+    display: none;
+}
+#check-btn {
+    display: none;
+}
+/*-------------------------
+    Hero section styles 
+--------------------------- */
+.hero-heading {
+    color: #575757;
+}
+.hero-heading > span, .footer-heading > span {
+    color: orangered;
+}
+.hero-text, .about-us-text, .recipie-text {
+    font-size: 18px;
+    color: #828282;
+    margin: 20px 0;
+    text-align: justify;
+}
+.hero-img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+.btn-design {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    background: rgb(131,58,180);
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    transition: background-color 1s ease-in-out;
+}
+.btn-design:hover {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid rgba(253,29,29,1);
+}
+/*------------------------------
+    about us section styles
+--------------------------------*/
+#about-us-section {
+    background-image: url(images/shapes/7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-us-img {
+    height: auto;
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 18%;
+    vertical-align: middle;
+    display: inline-block;
+    background-attachment: fixed;
+}
+.about-us-left-section {
+    width: 50%;
+}
+.about-us-right-section {
+    width: 50%;
+    padding-left: 5%;
+}
+.about-us-heading {
+    font-weight: 400;
+    font-size: 50px;
+}
+.img {
+    display: flex;
+  }
+
+/*---------------------------
+    Recipies Section styles
+----------------------------*/
+#recipis-section {
+    padding: 100px;
+
+}
+.recipis-top-section {
+    text-align: center;
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+.recipie-details {
+    padding: 15px;
+}
+.recipies-text, .footer-text {
+    font-size: 18px;
+    color: #828282;
+    margin-top: 20px;
+}
+.single-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.single-item {
+    width: 30%;
+    box-shadow: 10px 10px 4px 10px rgb(248, 247, 247);;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+.recipie-img {
+    width: 100%;
+}
+.recipie-title {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+.recipies-header {
+    font-weight: 500;
+}
+
+
+
+
+/*------------------------------
+    Social stat section design
+--------------------------------*/
+#social-stat-section {
+    margin: 70px;
+}
+.single-stat-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 4px 10px rgb(248, 247, 247);;
+    border-radius: 20px;
+    height: 200px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.single-stat {
+    text-align: center;
+    width: 30%;
+}
+/*----------------------
+    Blog section styles
+-------------------------*/
+#blog {
+    padding: 100px;
+    background-image: url(images/shapes/Frame\ 56.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blog-section-heading{
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+}
+.blog-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.blog-thumb {
+    width: 100%;
+}
+.blog-text {
+    font-size: 18px;
+    color: #575757;
+    margin: 20px 0;
+    text-align: justify;
+}
+.read-more-btn {
+    text-decoration: none;
+    color: #000;
+}
+
+.single-item-blog {
+    width: 30%;
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px 4px rgba(188, 150, 203, 1.0);
+}
+/*------------------------------
+    Contact us section styles
+--------------------------------*/
+#contact-us {
+    padding: 100px 0;
+    text-align: center;
+    background-image: url(images/shapes/Frame\ 57.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-design {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.contact-us-header {
+    font-weight: 400;
+    font-size: 50px;
+}
+.contact-us-text {
+    font-size: 18px;
+    color: #575757;
+}
+.input-group {
+    display: flex;
+    justify-content: space-around;
+}
+.input-group > label {
+    width: 30%;
+    padding: 10px;
+    margin: 5px 0;
+}
+.input-group > input, textarea {
+    width: 70%;
+    border: 2px solid rgba(68, 108, 251, 0.877);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.submit-group {
+    justify-content: flex-end;
+}
+
+.msg-btn {
+    padding: 10px 30px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: #962CEB;
+    /* background: -webkit-linear-gradient(top left, #962CEB, #39C588);
+    background: -moz-linear-gradient(top left, #962CEB, #39C588);
+    background: linear-gradient(to bottom right, #962CEB, #39C588); */
+    transition: background-color 1s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+.msg-btn:hover {
+    background-color: transparent;
+    border: 2px solid orangered;
+    color: #000;
+}
+.reset-btn {
+    margin-right: 12px;
+    background-color: #c0c0c063;
+    color: orangered;
+}
+.reset-btn:hover {
+    color: orangered;
+}
+/*-----------------------------
+    Footer section styles
+-----------------------------*/
+#footer {
+    background: #0B0D17;
+    padding: 60px 0;
+    color: #fff;
+    text-align: center;
+}
+.footer-heading {
+    font-size: 30px;
+}
+.footer-text {
+    color: #fff;
+}
+.footer-text > a {
+    color: #fff;
+}
+/* Extra custom design / Debuging */
+.m-none {
+    margin-top: 0;
+}
+.br-none {
+    box-shadow: transparent !important;
+}
+
+/*--------------------------
+    Responsive styles
+------------------------*/
+
+/* For mobile devices  */
+
+@media only screen and (max-width: 688px) {
+    /* Top / Navbar resonsive styles  */
+    #topbar {
+        display: none;
+    }
+    .topbar-wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .topbar-left {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #nav-icon:checked  ul {
+        top: 0;
+    }
+    ul {
+        transition: all .4s ease-in;
+		position: absolute;
+		/* top: -400%; */
+        top: 100px;
+        background-color: #000;
+    }
+    .topbar-right > ul {
+        display: flex;
+        align-items: flex-start;
+        justify-content: centert;
+        flex-direction: column;
+    }
+    .topbar-right > ul > li {
+        padding: 5px 0px;
+    }
+    /* Hero section responsive styles  */
+    #hero-section {
+        height: auto;
+    }
+    .section-wrapper {
+        flex-direction: column;
+    }
+    .hero-heading {
+        font-size: 30px;
+    }
+
+    /* About us responsive styles  */
+    .about-us-left-section {
+        width: 90%;
+    }
+    .about-us-img {
+        height: auto;
+        width: 70%;
+    }
+    .about-us-right-section {
+        width: 90%;
+    }
+
+    /* Recipie section responsive styles  */
+    #recipis-section {
+        padding: 50px 0;
+    }
+    .recipies-header {
+        font-size: 30px;
+    }
+    .single-item-wrapper {
+        flex-direction: column;
+    }
+    .single-item {
+        width: 90%;
+    }
+    /* Social stat responsive styles  */
+    #social-stat-section {
+        margin: 0;
+        margin-bottom: 60px;
+    }
+    .single-stat-wrapper {
+        flex-direction: column;
+        box-shadow: none;
+    }
+    .single-stat {
+        width: 100%;
+        margin-bottom: 21px;
+    }
+    h2.stat-heading {
+        font-size: 30px;
+    }
+
+    /* Blog section responsive styles  */
+
+    #blog {
+        padding: 30px 0;
+    }
+    .blog-wrapper {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .blog-section-heading {
+        font-size: 36px;
+    }
+    .single-item-blog {
+        width: 90%;
+        padding: 34px 7px;
+        margin-bottom: 20px;
+    }
+
+    /* Contact us section responsive styles  */
+
+    #contact-us {
+        padding: 50px 0;
+    }
+    .contact-us-header {
+        font-weight: 400;
+        font-size: 36px;
+    }
+    .form-design {
+        width: 100%;
+    }
+    .input-group {
+        flex-direction: column;
+    }
+    .input-group > label {
+        width: 30%;
+        padding: 10px 0;
+        margin: 5px 0;
+        text-align: left;
+    }
+    .input-group > input, textarea {
+        width: 90%;
+    }
+    .msg-btn {
+        padding: 10px 30px;
+        font-size: 16px;
+        width: 200px;
+        margin: 0 auto;
+    }
+    .reset-btn {
+        margin-bottom: 10px;
+    }
+    /* Footer responsive styles  */
+    #footer {
+        padding: 20px 0;
+    }
+    .brand {
+        font-size: 30px;
+    }
+    .footer-text {
+        font-size: 16px;
+    }
+}
