@@ -301,15 +301,15 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    width: 28%;
+    /* width: 30%; */
     background-color: rgb(211, 234, 253);
     border-radius: 5px;
     margin: 0 10px;
-    transition: all ease 1.5s;
+    transition: all ease 1s;
 }
 
 .single-review:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .review-right {
@@ -608,6 +608,26 @@ textarea {
         flex-direction: column;
     }
     .single-item {
+        width: 90%;
+    }
+    /* Reviews Section responsiove styles */
+    .reviews-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .reviews-header {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .single-review {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .review-right {
+        margin-left: 0;
+    }
+    .reviews-wrapper {
         width: 90%;
     }
     /* Social stat responsive styles  */
