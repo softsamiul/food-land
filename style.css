@@ -210,7 +210,8 @@ h2 {
     padding: 100px;
 }
 
-.recipis-top-section {
+.recipis-top-section,
+.reviews-top-section {
     text-align: center;
     width: 80%;
     margin: 0px auto;
@@ -252,8 +253,73 @@ h2 {
     margin: 15px 0;
 }
 
-.recipies-header {
+.recipies-header,
+.reviews-header {
     font-weight: 500;
+}
+
+
+/* Reviews section styles */
+
+#reviews-section {
+    padding-bottom: 30px;
+}
+
+.reviews-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.reviews-text {
+    text-align: center;
+    font-size: 18px;
+    color: #828282;
+    margin-top: 20px;
+}
+
+.review-text {
+    text-align: justify;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.customer-name {
+    margin: 10px 0;
+}
+
+.fas {
+    color: peru;
+}
+
+.reviews-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 28%;
+    background-color: rgb(211, 234, 253);
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: all ease 1.5s;
+}
+
+.single-review:hover {
+    transform: scale(1.1);
+}
+
+.review-right {
+    margin-left: 10px;
+}
+
+.customer-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }
 
 
@@ -329,6 +395,11 @@ h2 {
     padding: 30px 10px;
     border-radius: 5px;
     box-shadow: 5px 5px 3px 4px rgba(188, 150, 203, 1.0);
+    transition: all ease 1s;
+}
+
+.single-item-blog:hover {
+    transform: scale(1.05);
 }
 
 
