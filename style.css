@@ -416,6 +416,19 @@ textarea {
 }
 
 
+/* Animation Styles */
+
+.animation,
+.single-stat {
+    transition: all ease 1.5s;
+}
+
+.animation:hover,
+.single-stat:hover {
+    transform: scale(1.1);
+}
+
+
 /*-----------------------------
     Footer section styles
 -----------------------------*/
@@ -433,6 +446,7 @@ textarea {
 
 .footer-text {
     color: #fff;
+    text-align: center;
 }
 
 .footer-text>a {
